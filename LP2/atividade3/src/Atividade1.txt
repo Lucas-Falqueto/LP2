@@ -1,0 +1,18 @@
+Algumas classes Java, como por exemplo a classe vector, dizem-se threadsafe ou 
+synchronized. Descreva o significado disto e as implicações que isso tem para os programadores 
+que pretendem usar essas classes. 
+
+Quando uma classe é dita threadsafe ou synchronized, 
+significa que ela foi projetada e implementada para 
+permitir o acesso concorrente de várias threads 
+simultaneamente sem que ocorram problemas de inconsistência 
+ou acesso indevido aos dados compartilhados.
+Em outras palavras, uma classe threadsafe garante que seus 
+métodos podem ser chamados simultaneamente por 
+várias threads sem que ocorram condições de corrida ou erros de concorrência.
+Ao usar classes threadsafe como a classe Vector em Java, os programadores 
+não precisam se preocupar em proteger o acesso concorrente aos dados 
+compartilhados, pois a classe já fornece a 
+sincronização internamente. No entanto, é importante 
+observar que a sincronização pode ter um impacto significativo no desempenho, 
+já que a sincronização de métodos pode diminuir a velocidade do programa. 
