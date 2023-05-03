@@ -124,11 +124,4 @@ public class Panel extends JPanel {
         audioM.play();
     }
 
-    // Som de empate
-    public void somE(String Movie) {
-        URL urlE = JogodaVelha.class.getResource(Movie + ".wav");
-        AudioClip audioE = Applet.newAudioClip(urlE);
-        audioE.play();
-    }
-
 }
