@@ -1,6 +1,6 @@
 
 const App = (function () {
-
+    const btnAudio = document.getElementById('player');
     let _gridEl = null;
     let _btnStart = null;
     let _pokemons = [];
@@ -67,7 +67,10 @@ const App = (function () {
     };
 
     const _onCardClick = e => {
+        btnAudio.setAttribute('src', './songs/rotatecard.mp3')
+        btnAudio.play()
         if (e.target.className == "poke-card") {
+
             let index = e.target.dataset.index;
             if (_selecao.poke1 === null) {
                 _selecao.poke1 = +index;
@@ -83,6 +86,8 @@ const App = (function () {
             if (_pokemons[_selecao.poke1].id != _pokemons[_selecao.poke2].id) {
                 setTimeout(() => _zerarSelecoes(), 1000);
             } else {
+                btnAudio.setAttribute('src', './songs/win.mp3')
+                btnAudio.play()
                 _salvaAcertos();
             }
         }

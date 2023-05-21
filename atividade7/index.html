@@ -12,9 +12,11 @@
 <body>
     <div id="grid" class="tabuleiro"></div>
     <div class="botao">
-        <button id="start">(re)iniciar</button>
+        <audio id="player" src="./songs/start.mp3"></audio>
+        <button id="start" onclick="document.getElementById('player').play()">(re)iniciar</button>
     </div>
     <script src="main.js"></script>
+
 </body>
 
 </html>
