@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #2c2c2c;
+}
+
+.wrap {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ask {
+    height: 150px;
+    width: 450px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-align: justify;
+    padding: 10px;
+}
+
+.resp {
+    width: 450px;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+
+.btn {
+    padding: 15px;
+    background-color: #9797dd;
+    border: none;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background-color: green;
+}
